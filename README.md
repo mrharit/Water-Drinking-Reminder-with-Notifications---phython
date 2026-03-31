@@ -33,7 +33,7 @@ This is a lightweight Python script that sends **system notifications at regular
 2. **Install dependencies:**
    ```bash
    pip install plyer
-````
+
 
 3.  **(Linux only) Ensure notification backend is present**  
     On many distros, `libnotify`/`notify-send` is needed:
@@ -88,7 +88,7 @@ This is a lightweight Python script that sends **system notifications at regular
 
 ## 🛠️ Code (for quick reference)
 
-```python
+`python
 import time
 from plyer import notification
 
@@ -107,7 +107,7 @@ def water_reminder(interval_minutes):
         )
 
 water_reminder(30)
-```
+``
 
 ***
 
@@ -131,7 +131,7 @@ water_reminder(30)
     crontab -e
     # Add line (adjust paths):
     @reboot /usr/bin/python3 /home/you/water_reminder.py
-    ```
+    ``
 
 ***
 
